@@ -23,7 +23,7 @@
             android:id="@+id/nameHoros"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:text="Horoscopo"
             android:textSize="15sp" />
@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:text="Description"
             android:textSize="10sp" />
+
 
 
     </LinearLayout>
