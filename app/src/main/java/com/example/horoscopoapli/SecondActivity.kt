@@ -47,16 +47,10 @@ class SecondActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.favorite -> {
-                Log.i("MENU", "He hecho click en el menu de favorito")
-                true
-            }
             R.id.ic_share -> {
-                Log.i("MENU", "He hecho click en el menu de compartir")
                 true
             }
             R.id.favoriteEmpty -> {
-                Log.i("Menu", "He hecho click en el boton del corazon vacio")
                 true
             }
             else -> super.onOptionsItemSelected(item)

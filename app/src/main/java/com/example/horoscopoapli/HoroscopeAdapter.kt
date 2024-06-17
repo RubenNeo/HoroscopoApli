@@ -38,7 +38,7 @@ class HoroscopeAdapter(
         holder.itemView.setOnClickListener {
             onItemClickListener(position)
         }
-// la funcion Lamda decimos que al hacer click en esa posicion no mande a la misma.
+
     }
 
 }

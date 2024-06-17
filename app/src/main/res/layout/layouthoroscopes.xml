@@ -33,8 +33,9 @@
             android:id="@+id/NameDc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
             android:text="Description"
-            android:textSize="10sp" />
+            android:textSize="15dp" />
 
 
 

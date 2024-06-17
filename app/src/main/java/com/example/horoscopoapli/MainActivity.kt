@@ -11,7 +11,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Adapter
 import android.widget.ImageView
-import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,10 +19,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.horoscopoapli.Horoscope
 import com.example.horoscopoapli.HoroscopeAdapter
 import com.example.horoscopoapli.R
-import com.example.horoscopoapli.SecondActivity.Companion.EXTRA_HOROSCOPE_ID
 
 class MainActivity : AppCompatActivity() {
-
 
 
     lateinit var horoscopeList: List<Horoscope>
@@ -30,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
 
     lateinit var adapter: HoroscopeAdapter
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,12 +74,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    fun SecondActivity(horoscope: Horoscope) {
-        val intent: Intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra(SecondActivity.EXTRA_HOROSCOPE_ID, horoscope.id)
-        startActivity(intent)
-
-    }
 
     fun navigateToDetail(horoscope: Horoscope) {
         val intent: Intent = Intent(this, SecondActivity::class.java)
