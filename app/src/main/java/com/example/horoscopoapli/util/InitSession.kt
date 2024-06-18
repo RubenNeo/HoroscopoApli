@@ -1,4 +1,4 @@
-package com.example.horoscopoapli
+package com.example.horoscopoapli.util
 
 import android.content.Context
 import android.content.SharedPreferences

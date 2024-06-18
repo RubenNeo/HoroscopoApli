@@ -7,7 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.horoscopoapli.InitSession
+import com.example.horoscopoapli.util.InitSession
 import com.example.horoscopoapli.R
 import com.example.horoscopoapli.data.Horoscope
 import com.example.horoscopoapli.data.HoroscopeProvider
@@ -48,6 +48,9 @@ class SecondActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.textName).setText(horoscope.name)
         findViewById<ImageView>(R.id.ImageViewH).setImageResource(horoscope.logo)
+//Para poner el nombre y la fecha arriba en el menu.
+        supportActionBar?.setTitle(horoscope.name)
+        supportActionBar?.setSubtitle(horoscope.description)
 
     }
 
