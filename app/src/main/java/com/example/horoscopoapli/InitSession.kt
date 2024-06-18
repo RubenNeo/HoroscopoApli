@@ -2,8 +2,7 @@ package com.example.horoscopoapli
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.graphics.Shader
-import com.example.horoscopoapli.SecondActivity.Companion.EXTRA_HOROSCOPE_ID
+import com.example.horoscopoapli.activitys.SecondActivity
 
 class InitSession (context: Context) {
     companion object {
@@ -17,7 +16,7 @@ class InitSession (context: Context) {
         ShaderPref = context.getSharedPreferences("Init Session", Context.MODE_PRIVATE)
 
     }
-    fun SetFavorite(id :String){
+    fun SetFavoriteHoroscope(id :String){
 
         val editor = ShaderPref.edit()
         editor.putString(SecondActivity.EXTRA_HOROSCOPE_ID, id)

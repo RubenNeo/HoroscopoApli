@@ -1,4 +1,4 @@
-package com.example.horoscopoapli
+package com.example.horoscopoapli.adapter
 
 import android.provider.ContactsContract.CommonDataKinds.Im
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.core.view.accessibility.AccessibilityViewCommand.SetTextArguments
 import androidx.recyclerview.widget.RecyclerView
 import com.example.horoscopoapli.R
+import com.example.horoscopoapli.data.Horoscope
 
 //declarar la funcion Lambda--------------------------------->
 class HoroscopeAdapter(

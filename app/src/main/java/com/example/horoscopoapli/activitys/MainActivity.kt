@@ -1,24 +1,16 @@
-package com.example.horoscopoapli
+package com.example.horoscopoapli.activitys
 
 import android.content.Intent
-import android.icu.text.Transliterator.Position
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.telecom.Call.Details
-import android.util.Log
 import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.widget.Adapter
-import android.widget.ImageView
 import androidx.appcompat.widget.SearchView
-import androidx.core.content.ContextCompat.startActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.horoscopoapli.Horoscope
-import com.example.horoscopoapli.HoroscopeAdapter
 import com.example.horoscopoapli.R
+import com.example.horoscopoapli.adapter.HoroscopeAdapter
+import com.example.horoscopoapli.data.Horoscope
+import com.example.horoscopoapli.data.HoroscopeProvider
 
 class MainActivity : AppCompatActivity() {
 
