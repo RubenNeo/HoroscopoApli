@@ -12,7 +12,7 @@ class HoroscopeProvider {
                 R.drawable.aries
             ),
             Horoscope(
-                "Tauro",
+                "Taurus",
                 R.string.horoscope_name_taurus,
                 R.string.horoscope_date_aries,
                 R.drawable.tauro

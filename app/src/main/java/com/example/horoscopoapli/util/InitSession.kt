@@ -8,6 +8,9 @@ class InitSession (context: Context) {
     companion object {
         const val EXTRA_HOROSCOPE_ID = "FAVORITE_HOROSCOPE"
     }
+    fun isFavorite(horoscopeId: String) : Boolean {
+        return getFavoriteHoroscope()?.equals(horoscopeId) ?: false
+    }
 
 
     private val ShaderPref : SharedPreferences

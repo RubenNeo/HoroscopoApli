@@ -3,16 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
-    android:padding="20dp">
-
+    android:padding="20dp"
+    tools:background="@color/black">
 
     <ImageView
         android:id="@+id/ImViewLogo"
-        android:layout_width="100sp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="15dp"
         android:src="@drawable/ic_aries"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/FavoriteIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_favorite"
         app:tint="@color/white" />
 
     <LinearLayout
@@ -20,7 +29,6 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical">
-
 
         <TextView
             android:id="@+id/nameHoros"
@@ -40,9 +48,6 @@
             android:layout_marginStart="90dp"
             android:text="Description"
             android:textSize="15dp" />
-
-
-
     </LinearLayout>
 
 </LinearLayout>

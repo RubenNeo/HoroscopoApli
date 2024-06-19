@@ -1,5 +1,24 @@
 <resources>
 
+    <string name="select_sign_prompt">Selecciona un signo</string>
+    <string name="check_compatibility">Verificar Compatibilidad</string>
+
+
+    <string-array name="signs_array">
+        <item>Aries</item>
+        <item>Tauro</item>
+        <item>Géminis</item>
+        <item>Cáncer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Escorpio</item>
+        <item>Sagitario</item>
+        <item>Capricornio</item>
+        <item>Acuario</item>
+        <item>Piscis</item>
+    </string-array>
+
 
     <string name="app_name">LightAndStairs</string>
 
@@ -30,8 +49,6 @@
     <string name="horoscope_date_pisces">February 19 to March 20</string>
 
 
-
-
     <string name="menu_share">share</string>
     <string name="menu_favorite">favorite</string>
     <string name="menu_favorite_empty">favoriteEmpty</string>
@@ -45,8 +62,6 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-
-
 
 
 </resources>
