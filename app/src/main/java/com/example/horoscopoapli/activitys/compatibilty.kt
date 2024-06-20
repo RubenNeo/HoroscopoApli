@@ -1,6 +1,7 @@
 package com.example.horoscopoapli.activitys
 
 import android.app.ProgressDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -8,6 +9,7 @@ import android.os.Looper
 import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
@@ -26,6 +28,7 @@ class compatibilty : AppCompatActivity() {
     lateinit var progressDialog: ProgressDialog
     lateinit var imageCompatibility : ImageView
     lateinit var textCompatibility : TextView
+    lateinit var backButton : ImageButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +41,13 @@ class compatibilty : AppCompatActivity() {
         calculateCompatibility = findViewById(R.id.calculateCompatibility)
         imageCompatibility = findViewById(R.id.imageCompatibility)
         textCompatibility = findViewById(R.id.textCompatibility)
+        backButton = findViewById(R.id.backButton)
+
+        backButton.setOnClickListener{
+            val intent = Intent (this , SecondActivity::class.java)
+           finish()
+        }
+
 
         SetupSpinners()
 
