@@ -46,7 +46,7 @@
                 android:textColor="@color/white"
                 android:padding="16dp"
                 android:textSize="20dp"
-                android:textStyle="italic"/>
+                android:textStyle="bold|italic"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/ButtonInit"

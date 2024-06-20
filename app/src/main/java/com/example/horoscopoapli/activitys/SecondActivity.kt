@@ -40,10 +40,23 @@ class SecondActivity : AppCompatActivity() {
 
     lateinit var FavoriteMenuItem: MenuItem
 
+    lateinit var checkCompatibilityButton : FloatingActionButton
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+
+        checkCompatibilityButton = findViewById(R.id.checkCompatibilityButton)
+
+
+        checkCompatibilityButton.setOnClickListener{
+            val intent = Intent (this , compatibilty::class.java)
+            startActivity(intent)
+        }
+
+
 
         Session = InitSession(this)
 
@@ -63,6 +76,8 @@ class SecondActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.textName).setText(horoscope.name)
         findViewById<ImageView>(R.id.ImageViewH).setImageResource(horoscope.logo)
+
+
 
 
         supportActionBar?.setTitle(horoscope.name)
